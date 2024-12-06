@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PokeDexxTer</string>
+    <string name="svHint">Busca tu pokemón</string>
+    <string name="pokeTitle">¿Qué pokemón estás buscando? </string>
 </resources>
