@@ -42,12 +42,16 @@
         </TextView>
 
         <SearchView
+            android:id="@+id/svPokemon"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="bottom"
             android:layout_margin="20dp"
+
             android:background="@drawable/rounded_searchview"
-            android:queryHint="@string/svHint">
+            android:queryHint="@string/svHint"
+
+            >
 
 
         </SearchView>
