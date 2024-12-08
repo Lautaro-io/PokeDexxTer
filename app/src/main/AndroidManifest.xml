@@ -15,9 +15,13 @@
         android:theme="@style/Theme.PokeDexxTer"
         tools:targetApi="31">
         <activity
-            android:name=".PokomDataActivity"
+            android:name=".PokedexActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".PokomDataActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

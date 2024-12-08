@@ -19,7 +19,9 @@
             android:layout_gravity="end|center"
             android:layout_marginHorizontal="25dp"
             android:layout_marginBottom="150dp"
-            android:src="@drawable/pokeball_pokemon_svgrepo_com"></ImageView>
+            android:src="@drawable/pokeball_pokemon_svgrepo_com">
+
+        </ImageView>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,12 +62,13 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/btnPokedex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ver pokedex"
+        android:layout_margin="20dp"
         android:background="@color/purple_500"
-        android:textColor="@color/white"
-        android:layout_margin="20dp">
+        android:text="Ver pokedex"
+        android:textColor="@color/white">
 
     </Button>
 </LinearLayout>

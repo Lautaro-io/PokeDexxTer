@@ -7,7 +7,7 @@
     android:layout_height="200dp"
     android:layout_margin="15dp"
     app:cardCornerRadius="16dp"
-    tools:cardBackgroundColor="@color/black">
+    app:cardBackgroundColor="@color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/imgPokemon"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:layout_gravity="center"
             android:layout_margin="5dp" />
 
@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="30sp"
                 tools:text="Bulbasaur"
                 android:textStyle="bold">

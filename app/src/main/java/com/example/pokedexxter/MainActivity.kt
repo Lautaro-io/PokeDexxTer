@@ -40,15 +40,22 @@ class MainActivity : ComponentActivity() {
             }
 
         })
+        binding.btnPokedex.setOnClickListener {
+            navigateToPokedex()
+        }
     }
+
+
 
     private fun searchPokemon(name: String) {
         CoroutineScope(Dispatchers.IO).launch {
             val response = retrofit.create(ApiService::class.java).getPokemon(name)
             if (response.isSuccessful) {
                 runOnUiThread {
-                    val pokemon: List<PokemonDataResponse?> = listOf(response.body())
-                    navigateToResult(pokemon)
+                    val pokemon: PokemonDataResponse? = response.body()
+                    if (pokemon != null) {
+                        navigateToResult(pokemon)
+                    }
                 }
             } else {
                 when (response.code()) {
@@ -78,11 +85,15 @@ class MainActivity : ComponentActivity() {
             .build()
     }
 
-    private fun navigateToResult(pokeList: List<PokemonDataResponse?>) {
+    private fun navigateToResult(pokemon:PokemonDataResponse) {
         val intent = Intent(this@MainActivity, PokomDataActivity::class.java)
-        intent.putParcelableArrayListExtra("EXTRA_LIST", ArrayList(pokeList))
-        Log.d("Chelo", "Lista enviada: $pokeList")
+        intent.putExtra("EXTRA_LIST", pokemon)
 
+        startActivity(intent)
+    }
+
+    private fun navigateToPokedex() {
+        val intent = Intent(this@MainActivity , PokedexActivity::class.java)
         startActivity(intent)
     }
 }
