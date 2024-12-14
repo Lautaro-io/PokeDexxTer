@@ -34,7 +34,7 @@ Esta aplicación te permite buscar Pokémon fácilmente utilizando un campo de b
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/pokemon-search-app.git
+   git clone https://github.com/Lautaro-io/pokemon-search-app.git
 2. **Abre el proyecto en Android Studio.**
 3. **Sincroniza las dependencias con Gradle.**
 4. **Ejecuta la app en un dispositivo físico o emulador.**
